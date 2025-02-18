@@ -165,7 +165,7 @@ fi
 echo "Shinobi - Start Shinobi and set to start on boot?"
 echo "(y)es or (N)o"
 read startShinobi
-if [ "$startShinobi" = "y" ] || [ "$startShinobi" = "y" ]; then
+if [ "$startShinobi" = "y" ] || [ "$startShinobi" = "Y" ]; then
     sudo pm2 start camera.js
     sudo pm2 start cron.js
     sudo pm2 startup
